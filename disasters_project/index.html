@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management</title>
+    <style>
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style each section containing a disaster type definition */
+.disaster-type {
+    margin-bottom: 20px;
+}
+
+/* Style the section headings */
+h2 {
+    color: #007BFF;
+    margin-top: 10px;
+}
+
+/* Style the paragraph text */
+p {
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+   /* Style the <ul> elements within the "newlist" */
+ul.newlist ul.disaster {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the <li> elements within the "disaster" lists */
+ul.newlist ul.disaster li {
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* Style the <a> elements within the lists */
+ul.newlist ul.disaster a {
+    text-decoration: none;
+    color: #333; /* Change the link color as needed */
+    font-weight: bold;
+}
+
+/* Style the <a> elements on hover */
+ul.newlist ul.disaster a:hover {
+    color: #ff6600; /* Change the link color on hover */
+}
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color and style for the header */
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style the main content area */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the section headings */
+        h2 {
+            color: #007BFF;
+            margin-top: 20px;
+        }
+
+        /* Add some spacing and styling to paragraphs */
+        p {
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        /* Add a hover effect to section headings */
+        h2:hover {
+            text-decoration: underline;
+        }
+
+        /* Style the unordered lists for different types of disasters */
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        /* Style list items within the unordered lists */
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 80px;">Disaster Management</h1>
+    </header>
+    <div class="search-container">
+        <h1>Search your Question here...</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h4 style="text-align: center;font-size: 30px;">Disaster Management</h4>
+        <p style="text-align: center;font-size: 20px;">Disaster management, also known as emergency management or crisis management,
+             is a systematic and coordinated process of preparing for, mitigating the impact of,
+              responding to, and recovering from disasters and emergencies. Its primary goal is to protect lives,
+            'property, and the environment during and after various types of disasters and emergencies,
+                whether they are natural or man-made. Disaster management involves a range of activities and measures 
+                to minimize the negative effects of such events and facilitate a swift and effective response.</p>
+                <br>
+                <p style="text-align: center;font-size: 30px;color: red;"> Select the topic for explanation</p>
+                <a href="form.html"><span style="margin-left: 625px;font-size: large;">Send the Feedback for missed content </span></a>
+    </div>
+    <br>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Types of Disasters</title>
+        <style>
+            /* Reset some default styles */
+            body, h1, h2, p {
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Set a background color and style for the header */
+            header {
+                background-color: #007BFF;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            /* Style the main content area */
+            main {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Style the section headings */
+            h2 {
+                color: #007BFF;
+                margin-top: 20px;
+            }
+    
+            /* Add some spacing and styling to paragraphs */
+            p {
+                margin-bottom: 20px;
+                line-height: 1.4;
+            }
+    
+            /* Add a hover effect to section headings */
+            h2:hover {
+                text-decoration: underline;
+            }
+    
+            /* Style the unordered lists for different types of disasters */
+            ul {
+                list-style-type: square;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+    
+            /* Style list items within the unordered lists */
+            ul li {
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Types of Disasters</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Natural Disasters</h2>
+                <ul>
+                    <li><a href="earthquake.html">Earthquake</a></li>
+                    <li><a href="htc.html">Cyclones/Hurricane/Typhoon</a></li>
+                    <li><a href="tornadoes.html">Tornadoes</a></li>
+                    <li><a href="flood.html">Floods</a></li>
+                    <li><a href="wildfires.html">Wildfires</a></li>
+                    <li><a href="volcanic eruption.html">Volcano Eruption</a></li>
+                    <li><a href="drought.html">Droughts</a></li>
+                    <li><a href="landslides.html">Landslide</a></li>
+                    <li><a href="tsunami.html">Tsunami</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Man-Made Disasters</h2>
+                <ul>
+                    <li><a href="Industrial accidents.html">Industrial</a></li>
+                    <li><a href="environment.html">Environmental</a></li>
+                    <li><a href="technological-failures.html">Tech Failure</a></li>
+                    <li><a href="Terrorism.html">Terrorism</a></li>
+                    <li><a href="War-and-Conflict.html">War</a></li>
+                    <li><a href="human-error.html">Human Error</a></li>
+                    <li><a href="social-and-political-factors.html">Social and Politics</a></li>
+                    <li><a href="cybersecurity-incidents.html">Cybersecurity</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Climate-Related Disasters</h2>
+                <ul>
+                    <li><a href="htc.html">Hurricanes</a></li>
+                    <li><a href="flood.html">Floods</a></li>
+                    <li><a href="landslides.html">Landslide</a></li>
+                    <li><a href="drought.html">Drought</a></li>
+                    <li><a href="wildfires.html">Wildfires</a></li>
+                    <li><a href="sea-level-rise.html">Sea level rises</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Biological Disasters</h2>
+                <ul>
+                    <li><a href="bioterrorism.html">Biological Terrorism</a></li>
+                    <li><a href="Natural Disaster And Environmental Factors.html">Natural Disasters</a></li>
+                    <li><a href="environmental_pollution.html">Environmental Management</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Social and Conflict</h2>
+                <ul>
+                    <li><a href="social-and-conflict.html">Social</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Environmental Disasters</h2>
+                <ul>
+                    <li><a href="earthquake.html">Earthquake</a></li>
+                    <li><a href="htc.html">Hurricanes</a></li>
+                    <li><a href="flood.html">Flood</a></li>
+                    <li><a href="wildfires.html">Wildfires</a></li>
+                    <li><a href="drought.html">Droughts</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Geological Disasters</h2>
+                <ul>
+                    <li><a href="earthquake.html">Earthquake</a></li>
+                    <li><a href="landslides.html">Landslide</a></li>
+                    <li><a href="volcanic eruption.html">Volcano Eruption</a></li>
+                    <li><a href="rockfall.html">Rockfalls</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Space-Related Disasters</h2>
+                <ul>
+                    <li><a href="gps.html">GPS Malfunctions</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Humanity Disasters</h2>
+                <ul>
+                    <li><a href="flood.html">Flood</a></li>
+                    <li><a href="drought.html">Drought</a></li>
+                    <li><a href="tsunami.html">Tsunami</a></li>
+                    <li><a href="wildfires.html">Wildfire</a></li>
+                </ul>
+            </section>
+        </main>
+    <script>
+        document.getElementById("search-button").addEventListener("click", function() {
+            // Get the search query from the input field
+            var searchTerm = document.getElementById("search-input").value.toLowerCase(); // Convert to lowercase for case-insensitive matching
+            
+            // Define a mapping of search terms to their respective HTML pages
+            var searchResults = {
+                "earthquake ": "earthquake.html",
+                "biological disaster":"biological disaster.html", "biological disasters":"biological disaster.html",
+"biologicals disasters":"biological disaster.html",
+"biologicals disaster":"biological disaster.html",
+"biological":"biological disaster.html",
+"biologicals" :"biological disaster.html",
+
+"earthquake":"earthquake.html",
+"earthquakes":"earthquake.html",
+"quake":"earthquake.html",
+"quakes":"earthquake.html",
+"earth":"earthquake.html",
+"earths":"earthquake.html",
+"earthsqaukes":"earthquake.html",
+"earthsquake":"earthquake.html",
+
+"bioterrorism":"bioterrorism.html",
+"bioterrorisms":"bioterrorism.html",
+"terrorism of biology":"bioterrorism.html",
+"terrorisms of biology":"bioterrorism.html",
+"biological terrorism  ":"bioterrorism.html",
+"biological terrorisms  ":"bioterrorism.html",
+
+"cybersecurity_incidents":"cybersecurity_incidents.html",
+"cybersecurity_incident":"cybersecurity_incidents.html",
+"cybersecurity_incidents disaster":"cybersecurity_incidents.html",
+"cybersecurity":"cybersecurity_incidents.html",
+"cybersecurities":"cybersecurity_incidents.html",
+"cybersecurity disaster":"cybersecurity_incidents.html",
+"cybersecurity disasters":"cybersecurity_incidents.html",
+
+"drought":"drought.html",
+"droughts":"drought.html",
+"drought disaster":"drought.html",
+"drought disasters ":"drought.html",
+"droughts disasters":"drought.html",
+"droughts disaster ":"drought.html",
+
+"environment":"environment.html",
+"environments":"environment.html",
+"environmental":"environment.html",
+"environment disaster":"environment.html",
+"environment disaster":"environment.html",
+"environ disaster":"environment.html",
+"environment disasters":"environment.html",
+
+"gps":"gps.html",
+
+"environmental pollutions":"environmental_pollution.html",
+"environmental pollution":"environmental_pollution.html",
+"pollution":"environmental_pollution.html",
+"pollutions":"environmental_pollution.html",
+"pollution disaster":"environmental_pollution.html",
+"pollution disasters":"environmental_pollution.html",
+
+"flood":"flood.html",
+"floods":"flood.html",
+"flood disaster":"flood.html",
+"flood disasters":"flood.html",
+"floods disaster":"flood.html",
+"floods disaster":"flood.html",
+
+"geology":"geology.html",
+"geological":"geology.html",
+"geologies":"geology.html",
+"geological disaster":"geology.html",
+"geological disasters":"geology.html",
+
+"hurricane":"htc.html",
+"typhoon":"htc.html",
+"cyclone":"htc.html",
+"hurricane typhoons cyclone":"htc.html",
+"hurricane typhoon cyclones":"htc.html",
+
+"human_error":"human_error.html",
+"humanerror":"human_error.html",
+"humanerrors":"human_error.html",
+"humanserror":"human_error.html",
+"humanerror disaster":"human_error.html",
+"humanerror disasters":"human_error.html",
+
+"humanitarian_disaster":"humanitarian_disaster.html",
+"humanitariandisaster":"humanitarian_disaster.html",
+"humanitariandisasters":"humanitarian_disaster.html",
+"humanitarydisaster":"humanitarian_disaster.html",
+"humanitarydisasters":"humanitarian_disaster.html",
+
+"industrail accidents":"industrail accidents.html",
+"industrail accident":"industrail accidents.html",
+"industry accidents":"industrail accidents.html",
+"industrail disaster":"industrail accidents.html",
+"industry disaster":"industrail accidents.html",
+"industrail disasters":"industrail accidents.html",
+"industry disasters":"industrail accidents.html",
+
+"landslides":"landslides.html",
+"landslide":"landslides.html",
+"landslides disaster":"landslides.html",
+"landslide disasters":"landslides.html",
+
+"manmade":"manmade.html",
+"manmade disasters":"manmade.html",
+"manmade disaster":"manmade.html",
+"artifical disaster":"manmade.html",
+"technology disaster":"manmade.html",
+"technological disaster":"manmade.html",
+
+"rockfall":"rockfall.html",
+"rockfalls":"rockfall.html",
+"rockfall disaster":"rockfall.html",
+"rockfall disasters":"rockfall.html",
+"rock disaster":"rockfall.html",
+
+"sea level rise ":"sea_level_rise.html ",
+"sea level disaster ":"sea_level_rise.html" ,
+"sea rise ":"sea_level_rise.html ",
+"sea level rise disaster ":"sea_level_rise.html ",
+"sea rise disaster":"sea_level_rise.html",
+"sea level ":"sea_level_rise.html" ,
+
+"social and conflict":"social_and_conflict.html",
+"social,conflict":"social_and_conflict.html",
+"social conflict":"social_and_conflict.html",
+"social conflict disaster":"social_and_conflict.html",
+"social disaster":"social_and_conflict.html",
+"conflict disaster":"social_and_conflict.html",
+
+"natural disaster and environmental factors":"natural disaster and environmental factors.html",
+"natural disaster":"natural disaster and environmental factors.html",
+"environmental factors":"natural disaster and environmental factors.html",
+"natural disasters environ factors":"natural disaster and environmental factors.html",
+"natural disaster  environmental factors":"natural disaster and environmental factors.html",
+
+"social_and_political_factors":"social-and-political-factors.html",
+"social and political factors":"social-and-political-factors.html",
+"social political factors":"social-and-political-factors.html",
+"social factors":"social-and-political-factors.html",
+"social factor":"social-and-political-factors.html",
+"social":"social-and-political-factors.html",
+"political factors":"social-and-political-factors.html",
+"political factor":"social-and-political-factors.html",
+
+"space related events_1":"space related events_1.html",
+"space related event_1":"space related events_1.html",
+"space  events_1":"space related events_1.html",
+"space  event_1":"space related events_1.html",
+
+"space related events_2":"space related events_2.html",
+"space related event_2":"space related events_2.html",
+"space  events_2":"space related events_2.html",
+"space  event_2":"space related events_2.html",
+
+"technological_failures":"technological_failures.html",
+"technological failures disasters":"technological_failures.html",
+"technological failures disaster":"technological_failures.html",
+"technological  disasters":"technological_failures.html",
+"technology failures disasters":"technological_failures.html",
+"technology  disasters":"technological_failures.html",
+
+"tornadoes":"tornadoes.html",
+"tornadoes disaster":"tornadoes.html",
+"tornadoes disasters ":"tornadoes.html",
+"tornado  ":"tornadoes.html",
+"tornado disaster":"tornadoes.html",
+"tornado disasters":"tornadoes.html",
+
+"tsunami":"tsunami.html",
+"sunami":"tsunami.html",
+"tsunami disaster":"tsunami.html",
+"tsunami disasters":"tsunami.html",
+
+
+"war_and_conflict":"war_and_conflict.html",
+"war an dconflict":"war_and_conflict.html",
+"war disaster":"war_and_conflict.html",
+"war conflict":"war_and_conflict.html",
+"war,conflict":"war_and_conflict.html",
+"war disasters":"war_and_conflict.html",
+
+"wildfires":"wildfires.html",
+"wildfire":"wildfires.html",
+"wildfire disasters":"wildfires.html",
+"wildfires disaster":"wildfires.html",
+"wild fire ":"wildfires.html",
+            };
+            
+            // Check if the search term exists in the mapping
+            if (searchTerm in searchResults) {
+                // Redirect to the corresponding HTML page
+                window.location.href = searchResults[searchTerm];
+            } else {
+                // If the search term is not found, display an alert (you can customize this)
+                alert("No results found for '" + searchTerm + "'.");
+            }
+        });
+    </script>
+    
+</body>
+</html>
